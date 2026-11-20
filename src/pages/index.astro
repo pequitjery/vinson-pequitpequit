@@ -7,14 +7,175 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<div class="hero-copy">
 			<div class="section-label">Haute Parfumerie</div>
 			<h1>Elixirs Crafted for <em>Luminous</em> Presence.</h1>
-			<p>Glimmer Fragrance Co. merges minimalist aesthetic design with rare olfactory botanicals to formulate signature scents that evoke memory, sophistication, and pure emotion.</p>
+			<p>
+				Glimmer Fragrance Co. merges minimalist design with rare botanical notes to create
+				signature scents that evoke memory, sophistication, and emotion.
+			</p>
 			<div class="hero-actions">
-				<a href="/index/sections/Projects" class="button">Explore Collection</a>
-				<a href="/index/sections/Services" class="button button-outline">Our Services</a>
+				<a href="#projects" class="button">Explore Collection</a>
+				<a href="#services" class="button button-outline">Our Services</a>
 			</div>
 		</div>
 		<div class="hero-photo">
-			<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1000" alt="Glimmer luxury perfume bottle" />
+			<img
+				src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1000"
+				alt="Glimmer luxury perfume bottle"
+			/>
+		</div>
+	</section>
+
+	<section class="section site-container" id="services">
+		<div class="section-heading">
+			<div class="section-label">Our Services</div>
+			<h2>The Alchemy of Olfaction</h2>
+			<p>From botanical sourcing to hand-blending, we honor the traditions of fine perfumery.</p>
+		</div>
+		<div class="services-grid">
+			<article class="service-card">
+				<span class="card-mark">I</span>
+				<h3>Ethical Sourcing</h3>
+				<p>We partner with sustainable growers to source pure, high-grade botanical oils.</p>
+			</article>
+			<article class="service-card">
+				<span class="card-mark">II</span>
+				<h3>Slow Maceration</h3>
+				<p>Each batch rests for six weeks, allowing its complex notes to mature and unite.</p>
+			</article>
+			<article class="service-card">
+				<span class="card-mark">III</span>
+				<h3>Bespoke Formulation</h3>
+				<p>Private sessions shape an individual signature scent around your preferences.</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="section section-muted" id="process">
+		<div class="site-container">
+			<div class="section-heading">
+				<div class="section-label">Artisanal Craftsmanship</div>
+				<h2>Our Slow-Perfume Process</h2>
+				<p>Every Glimmer fragrance is made with intention, patience, and a focus on exceptional ingredients.</p>
+			</div>
+			<div class="process-grid">
+				<article class="process-card">
+					<span class="card-mark">01</span>
+					<h3>Source</h3>
+					<p>We select rare botanical essences from trusted, sustainable partners.</p>
+				</article>
+				<article class="process-card">
+					<span class="card-mark">02</span>
+					<h3>Blend</h3>
+					<p>Our perfumers compose balanced accords around a defining central note.</p>
+				</article>
+				<article class="process-card">
+					<span class="card-mark">03</span>
+					<h3>Macerate</h3>
+					<p>Each formula rests for six weeks so every note can deepen and harmonize.</p>
+				</article>
+				<article class="process-card">
+					<span class="card-mark">04</span>
+					<h3>Hand-Bottle</h3>
+					<p>Finished fragrances are bottled in small artisanal batches.</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="section site-container" id="about">
+		<div class="about-grid">
+			<div class="about-photo">
+				<img
+					src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=1000"
+					alt="Artisanal fragrance bottle"
+					loading="lazy"
+				/>
+			</div>
+			<div class="about-copy">
+				<div class="section-label">Our Philosophy</div>
+				<h2>Where Minimalist Design Meets High Scent.</h2>
+				<p>
+					At Glimmer Fragrance Co., we focus on exceptional notes. Each formula is distilled
+					to its pure essence—designed to settle softly on the skin and radiate effortless
+					elegance throughout your day.
+				</p>
+				<a class="button button-outline" href="#process">Discover Our Craft</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-muted" id="projects">
+		<div class="site-container">
+			<div class="section-heading">
+				<div class="section-label">Signature Flacons</div>
+				<h2>The Permanent Collection</h2>
+				<p>A curated line of extrait de parfum blending concentrated oils with modern undertones.</p>
+			</div>
+			<div class="projects-grid">
+				<article class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=800"
+						alt="Aura Gold perfume"
+						loading="lazy"
+					/>
+					<div class="project-copy">
+						<div class="project-title"><h3>Aura Gold</h3><span>$220</span></div>
+						<p>Warm amber, tonka bean, bergamot, and a touch of pink pepper.</p>
+					</div>
+				</article>
+				<article class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&q=80&w=800"
+						alt="Velvet Noir perfume"
+						loading="lazy"
+					/>
+					<div class="project-copy">
+						<div class="project-title"><h3>Velvet Noir</h3><span>$245</span></div>
+						<p>Smoky vetiver, dark cedarwood, and night-blooming jasmine.</p>
+					</div>
+				</article>
+				<article class="project-card">
+					<img
+						src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800"
+						alt="Lumière Blanc perfume"
+						loading="lazy"
+					/>
+					<div class="project-copy">
+						<div class="project-title"><h3>Lumière Blanc</h3><span>$210</span></div>
+						<p>White tea, pear blossom, and sheer musk inspired by morning light.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="section site-container" id="contact">
+		<div class="contact-grid">
+			<div class="contact-copy">
+				<div class="section-label">Get in Touch</div>
+				<h2>Begin Your Fragrance Journey.</h2>
+				<p>
+					For collection inquiries, product information, or a private consultation, get in
+					touch with our team. We look forward to helping you discover your fragrance.
+				</p>
+				<div class="contact-detail">
+					<strong>Boutique</strong>
+					<span>Osmeña Ave., Victorias City, Negros Occidental, 6119</span>
+				</div>
+				<div class="contact-detail">
+					<strong>Direct Inquiries</strong>
+					<a href="mailto:dre@glimmerfragrance.com">dre@glimmerfragrance.com</a>
+				</div>
+			</div>
+			<form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for contacting Glimmer Fragrance Co. Our concierge will respond shortly.');">
+				<h3>Send a Message</h3>
+				<label for="name">Your Name</label>
+				<input id="name" name="name" type="text" required placeholder="Your name" />
+				<label for="email">Email Address</label>
+				<input id="email" name="email" type="email" required placeholder="you@example.com" />
+				<label for="message">Message / Request</label>
+				<textarea id="message" name="message" required placeholder="Tell us about your scent preferences..."></textarea>
+				<button class="button" type="submit">Submit Inquiry</button>
+			</form>
 		</div>
 	</section>
 
@@ -27,6 +188,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			min-height: 650px;
 			padding-block: 80px;
 		}
+		.section { padding-block: 100px; scroll-margin-top: 90px; }
+		.section-muted { background: var(--surface); }
+		.section-muted > .site-container { padding-inline: 20px; }
 		.section-label {
 			margin-bottom: 18px;
 			color: var(--accent);
@@ -35,22 +199,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			letter-spacing: 0.17em;
 			text-transform: uppercase;
 		}
-		h1 {
+		h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
+		.hero h1 {
 			max-width: 640px;
 			margin: 0;
-			font-family: "Playfair Display", Georgia, serif;
 			font-size: clamp(3.2rem, 6.8vw, 5.8rem);
 			font-weight: 500;
 			letter-spacing: -0.055em;
 			line-height: 1.02;
 		}
-		h1 em { color: var(--accent); font-weight: 400; }
-		.hero-copy p {
-			max-width: 480px;
-			margin: 24px 0 32px;
+		.hero h1 em { color: var(--accent); font-weight: 400; }
+		.hero-copy > p, .section-heading > p, .about-copy > p, .contact-copy > p {
 			color: var(--muted);
 			line-height: 1.9;
 		}
+		.hero-copy > p { max-width: 480px; margin: 24px 0 32px; }
 		.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
 		.hero-photo {
 			min-height: 560px;
@@ -60,10 +223,67 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			background: var(--surface);
 		}
 		.hero-photo img { width: 100%; height: 560px; object-fit: cover; }
+		.section-heading { max-width: 720px; margin-bottom: 42px; }
+		.section-heading h2, .about-copy h2, .contact-copy h2 {
+			margin: 0 0 18px;
+			font-size: clamp(2.3rem, 5vw, 4rem);
+			font-weight: 500;
+			letter-spacing: -0.04em;
+			line-height: 1.1;
+		}
+		.section-heading > p { max-width: 600px; margin: 0; }
+		.services-grid, .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+		.service-card, .process-card, .project-card, .contact-form {
+			border: 1px solid var(--glass-border);
+			border-radius: 20px;
+			background: var(--glass-bg);
+			box-shadow: 0 10px 30px var(--shadow);
+		}
+		.service-card { padding: 32px; }
+		.card-mark { color: var(--accent); font-size: 1rem; font-weight: 700; letter-spacing: 0.08em; }
+		.service-card h3, .process-card h3 { margin: 22px 0 10px; font-size: 1.4rem; font-weight: 500; }
+		.service-card p, .process-card p, .project-card p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.8; }
+		.process-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+		.process-card { min-height: 210px; padding: 32px; }
+		.about-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; align-items: center; gap: 85px; }
+		.about-photo img { width: 100%; height: 480px; border: 1px solid var(--border); border-radius: 24px; object-fit: cover; }
+		.about-copy > p { margin: 0 0 28px; }
+		.project-card { overflow: hidden; }
+		.project-card > img { width: 100%; height: 260px; object-fit: cover; }
+		.project-copy { padding: 24px; }
+		.project-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+		.project-title h3 { margin: 0; font-size: 1.35rem; font-weight: 500; }
+		.project-title span { color: var(--accent); font-weight: 700; }
+		.contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 75px; }
+		.contact-copy > p { margin: 20px 0 30px; }
+		.contact-detail { display: flex; flex-direction: column; gap: 5px; margin-top: 22px; }
+		.contact-detail span, .contact-detail a { color: var(--muted); line-height: 1.7; }
+		.contact-form { display: flex; flex-direction: column; padding: 36px; }
+		.contact-form h3 { margin: 0 0 20px; font-size: 1.85rem; font-weight: 500; }
+		.contact-form label { margin: 12px 0 8px; font-size: 0.83rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+		.contact-form input, .contact-form textarea {
+			width: 100%;
+			padding: 14px 16px;
+			border: 1px solid var(--border);
+			border-radius: 12px;
+			background: var(--background);
+			color: var(--text);
+		}
+		.contact-form textarea { min-height: 130px; resize: vertical; }
+		.contact-form .button { margin-top: 20px; }
 		@media (max-width: 990px) {
-			.hero { grid-template-columns: 1fr; gap: 40px; }
-			.hero-photo { min-height: 450px; }
-			.hero-photo img { height: 450px; }
+			.hero, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+			.hero { min-height: auto; }
+			.hero-photo, .hero-photo img { min-height: 450px; height: 450px; }
+			.services-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+		}
+		@media (max-width: 640px) {
+			.section { padding-block: 72px; }
+			.hero { padding-block: 56px; }
+			.services-grid, .projects-grid, .process-grid { grid-template-columns: 1fr; }
+			.section-muted > .site-container { padding-inline: 20px; }
+			.about-photo img { height: 360px; }
+			.contact-form { padding: 24px; }
 		}
 	</style>
 </BaseLayout>
