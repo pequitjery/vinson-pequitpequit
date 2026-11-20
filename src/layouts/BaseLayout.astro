@@ -1,0 +1,180 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+}
+
+const { title = 'Glimmer Fragrance Co. — Luxury Haute Parfumerie' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#FAF8F5" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content="Glimmer Fragrance Co. — Minimalist luxury haute parfumerie and bespoke fragrance crafting."
+		/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="scroll-progress"></div>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color-scheme: light;
+		--background: #fffdfa;
+		--surface: #f7f4ef;
+		--surface-strong: #f0ebe4;
+		--glass-bg: rgba(255, 253, 250, 0.78);
+		--glass-border: rgba(216, 203, 185, 0.4);
+		--text: #1c1917;
+		--muted: #78716c;
+		--border: #d8cbb9;
+		--header-bg: rgba(255, 253, 250, 0.88);
+		--shadow: rgba(28, 25, 23, 0.08);
+		--accent: #c5a059;
+		--accent-hover: #a3803c;
+		--accent-light: rgba(197, 160, 89, 0.15);
+	}
+
+	body.dark-mode {
+		color-scheme: dark;
+		--background: #141312;
+		--surface: #1f1d1b;
+		--surface-strong: #2a2725;
+		--glass-bg: rgba(20, 19, 18, 0.75);
+		--glass-border: rgba(255, 255, 255, 0.1);
+		--text: #f5f0e8;
+		--muted: #a8a095;
+		--border: #332f2c;
+		--header-bg: rgba(20, 19, 18, 0.85);
+		--shadow: rgba(0, 0, 0, 0.35);
+		--accent: #d4af37;
+		--accent-hover: #e5c158;
+		--accent-light: rgba(212, 175, 55, 0.2);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 90px;
+	}
+
+	body {
+		margin: 0;
+		background: var(--background);
+		color: var(--text);
+		font-family: "DM Sans", sans-serif;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	body, header, section, footer, article, .menu-item,
+	.service-item, .value-item, .contact-form, .gallery-photo, .glass-card {
+		transition: background-color 0.3s ease, color 0.3s ease,
+			border-color 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	button, input, textarea {
+		font: inherit;
+	}
+
+	button {
+		cursor: pointer;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.serif {
+		font-family: "Playfair Display", Georgia, serif;
+	}
+
+	.site-container {
+		width: min(1200px, calc(100% - 40px));
+		margin-inline: auto;
+	}
+
+	.button {
+		display: inline-flex;
+		min-height: 48px;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		padding: 13px 24px;
+		border: 1px solid var(--accent);
+		border-radius: 999px;
+		background: var(--accent);
+		color: #fff;
+		font-size: 0.88rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		transition: transform 0.25s ease, background-color 0.25s ease,
+			border-color 0.25s ease;
+	}
+
+	.button:hover {
+		transform: translateY(-2px);
+		background: var(--accent-hover);
+		border-color: var(--accent-hover);
+	}
+
+	.button-outline {
+		border-color: var(--border);
+		background: transparent;
+		color: var(--text);
+	}
+
+	.button-outline:hover {
+		border-color: var(--accent);
+		background: var(--surface);
+	}
+
+	#scroll-progress {
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: var(--accent);
+		transform: scaleX(0);
+		transform-origin: left;
+		pointer-events: none;
+	}
+
+	:focus-visible {
+		outline: 3px solid var(--accent);
+		outline-offset: 4px;
+	}
+</style>
+
