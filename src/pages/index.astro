@@ -3,7 +3,67 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Glimmer Fragrance Co. — Luxury Haute Parfumerie">
-	<section class="site-container" style="min-height: 50vh; display: grid; place-items: center;">
-		<h1>Glimmer Fragrance</h1>
+	<section class="hero site-container" id="hero">
+		<div class="hero-copy">
+			<div class="section-label">Haute Parfumerie</div>
+			<h1>Elixirs Crafted for <em>Luminous</em> Presence.</h1>
+			<p>Glimmer Fragrance Co. merges minimalist aesthetic design with rare olfactory botanicals to formulate signature scents that evoke memory, sophistication, and pure emotion.</p>
+			<div class="hero-actions">
+				<a href="/index/sections/Projects" class="button">Explore Collection</a>
+				<a href="/index/sections/Services" class="button button-outline">Our Services</a>
+			</div>
+		</div>
+		<div class="hero-photo">
+			<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1000" alt="Glimmer luxury perfume bottle" />
+		</div>
 	</section>
+
+	<style>
+		.hero {
+			display: grid;
+			grid-template-columns: 1.05fr 0.95fr;
+			align-items: center;
+			gap: 65px;
+			min-height: 650px;
+			padding-block: 80px;
+		}
+		.section-label {
+			margin-bottom: 18px;
+			color: var(--accent);
+			font-size: 0.76rem;
+			font-weight: 700;
+			letter-spacing: 0.17em;
+			text-transform: uppercase;
+		}
+		h1 {
+			max-width: 640px;
+			margin: 0;
+			font-family: "Playfair Display", Georgia, serif;
+			font-size: clamp(3.2rem, 6.8vw, 5.8rem);
+			font-weight: 500;
+			letter-spacing: -0.055em;
+			line-height: 1.02;
+		}
+		h1 em { color: var(--accent); font-weight: 400; }
+		.hero-copy p {
+			max-width: 480px;
+			margin: 24px 0 32px;
+			color: var(--muted);
+			line-height: 1.9;
+		}
+		.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
+		.hero-photo {
+			min-height: 560px;
+			overflow: hidden;
+			border: 1px solid var(--border);
+			border-radius: 200px 200px 24px 24px;
+			background: var(--surface);
+		}
+		.hero-photo img { width: 100%; height: 560px; object-fit: cover; }
+		@media (max-width: 990px) {
+			.hero { grid-template-columns: 1fr; gap: 40px; }
+			.hero-photo { min-height: 450px; }
+			.hero-photo img { height: 450px; }
+		}
+	</style>
 </BaseLayout>

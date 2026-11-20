@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact — Glimmer Fragrance Co.">
+	<section class="section site-container">
+		<div class="contact-grid">
+			<div>
+				<div class="section-label">Get in Touch</div>
+				<h1>Begin Your Fragrance Journey.</h1>
+				<p>For inquiries regarding our fragrance collection, product information, or exclusive consultations, we invite you to get in touch with our team.</p>
+				<div class="detail"><strong>Boutique</strong><span>Osmeña Ave., Victorias City, Negros Occidental, 6119</span></div>
+				<div class="detail"><strong>Direct Inquiries</strong><a href="mailto:dre@glimmerfragrance.com">dre@glimmerfragrance.com</a></div>
+			</div>
+			<form>
+				<h2>Send a Message</h2>
+				<label for="name">Your Name</label>
+				<input id="name" type="text" required placeholder="e.g. Qwerty.123" />
+				<label for="email">Email Address</label>
+				<input id="email" type="email" required placeholder="qwerty@example.com" />
+				<label for="message">Message / Request</label>
+				<textarea id="message" required placeholder="Tell us about your scent preferences..."></textarea>
+				<button class="button" type="submit">Submit Inquiry</button>
+			</form>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.section { padding: 100px 0; }
+	.contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 75px; }
+	.section-label { color: var(--accent); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.17em; text-transform: uppercase; }
+	h1 { margin: 18px 0; font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.8rem, 5vw, 4.5rem); }
+	p, .detail span, .detail a { color: var(--muted); line-height: 1.8; }
+	.detail { display: flex; flex-direction: column; margin-top: 24px; }
+	.detail strong { color: var(--text); }
+	form { display: flex; flex-direction: column; padding: 36px; border: 1px solid var(--glass-border); border-radius: 24px; background: var(--glass-bg); }
+	form h2 { margin: 0 0 24px; font-family: "Playfair Display", Georgia, serif; font-size: 1.85rem; }
+	label { margin: 12px 0 8px; font-size: 0.83rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+	input, textarea { width: 100%; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--background); color: var(--text); }
+	textarea { min-height: 130px; resize: vertical; }
+	form .button { margin-top: 20px; }
+	@media (max-width: 990px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
+</style>

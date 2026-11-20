@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Services — Glimmer Fragrance Co.">
+	<section class="section site-container">
+		<div class="section-heading">
+			<div class="section-label">Our Services</div>
+			<h1>The Alchemy of Olfaction</h1>
+			<p>From raw botanical sourcing to hand-blending, we uphold centuries-old French perfumery traditions.</p>
+		</div>
+		<div class="services-grid">
+			<article><span>I</span><h2>Ethical Sourcing</h2><p>Direct partnerships with sustainable flower farms ensure pure, high-grade oils.</p></article>
+			<article><span>II</span><h2>Slow Maceration</h2><p>Every batch ages quietly for six weeks to allow complex notes to fuse seamlessly.</p></article>
+			<article><span>III</span><h2>Bespoke Formulation</h2><p>Private sessions create a signature scent tailored to your individual chemistry.</p></article>
+		</div>
+		<a class="button" href="/index/sections/Process">Discover Our Process</a>
+	</section>
+</BaseLayout>
+
+<style>
+	.section { padding: 100px 0; }
+	.section-heading { max-width: 680px; margin-bottom: 45px; }
+	.section-label { color: var(--accent); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.17em; text-transform: uppercase; }
+	h1 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.8rem, 6vw, 5rem); margin: 18px 0; }
+	.section-heading p { color: var(--muted); line-height: 1.9; }
+	.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+	article { padding: 32px; border: 1px solid var(--glass-border); border-radius: 20px; background: var(--glass-bg); }
+	article span { color: var(--accent); font-size: 1.4rem; }
+	h2 { font-family: "Playfair Display", Georgia, serif; }
+	article p { color: var(--muted); line-height: 1.8; }
+	@media (max-width: 990px) { .services-grid { grid-template-columns: 1fr; } }
+</style>

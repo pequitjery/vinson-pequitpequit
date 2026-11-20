@@ -42,36 +42,36 @@ const { title = 'Glimmer Fragrance Co. — Luxury Haute Parfumerie' } = Astro.pr
 <style is:global>
 	:root {
 		color-scheme: light;
-		--background: #fffdfa;
-		--surface: #f7f4ef;
-		--surface-strong: #f0ebe4;
-		--glass-bg: rgba(255, 253, 250, 0.78);
-		--glass-border: rgba(216, 203, 185, 0.4);
-		--text: #1c1917;
-		--muted: #78716c;
-		--border: #d8cbb9;
-		--header-bg: rgba(255, 253, 250, 0.88);
-		--shadow: rgba(28, 25, 23, 0.08);
-		--accent: #c5a059;
-		--accent-hover: #a3803c;
-		--accent-light: rgba(197, 160, 89, 0.15);
+		--background: #ffffff;
+		--surface: #f2f2f2;
+		--surface-strong: #e5e5e5;
+		--glass-bg: rgba(255, 255, 255, 0.78);
+		--glass-border: rgba(0, 0, 0, 0.14);
+		--text: #000000;
+		--muted: #4a4a4a;
+		--border: #cfcfcf;
+		--header-bg: rgba(255, 255, 255, 0.92);
+		--shadow: rgba(0, 0, 0, 0.12);
+		--accent: #000000;
+		--accent-hover: #333333;
+		--accent-light: rgba(0, 0, 0, 0.1);
 	}
 
 	body.dark-mode {
 		color-scheme: dark;
-		--background: #141312;
-		--surface: #1f1d1b;
-		--surface-strong: #2a2725;
-		--glass-bg: rgba(20, 19, 18, 0.75);
-		--glass-border: rgba(255, 255, 255, 0.1);
-		--text: #f5f0e8;
-		--muted: #a8a095;
-		--border: #332f2c;
-		--header-bg: rgba(20, 19, 18, 0.85);
-		--shadow: rgba(0, 0, 0, 0.35);
-		--accent: #d4af37;
-		--accent-hover: #e5c158;
-		--accent-light: rgba(212, 175, 55, 0.2);
+		--background: #ffffff;
+		--surface: #f2f2f2;
+		--surface-strong: #e5e5e5;
+		--glass-bg: rgba(255, 255, 255, 0.78);
+		--glass-border: rgba(0, 0, 0, 0.14);
+		--text: #000000;
+		--muted: #4a4a4a;
+		--border: #cfcfcf;
+		--header-bg: rgba(255, 255, 255, 0.92);
+		--shadow: rgba(0, 0, 0, 0.12);
+		--accent: #000000;
+		--accent-hover: #333333;
+		--accent-light: rgba(0, 0, 0, 0.1);
 	}
 
 	* {
@@ -113,6 +113,7 @@ const { title = 'Glimmer Fragrance Co. — Luxury Haute Parfumerie' } = Astro.pr
 	img {
 		display: block;
 		max-width: 100%;
+		filter: grayscale(100%);
 	}
 
 	.serif {

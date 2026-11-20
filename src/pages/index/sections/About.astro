@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About — Glimmer Fragrance Co.">
+	<section class="section site-container">
+		<div class="about-grid">
+			<div class="about-photo">
+				<img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=1000" alt="Artisanal fragrance formulation" />
+			</div>
+			<div>
+				<div class="section-label">Our Philosophy</div>
+				<h1>Where Minimalist Design Meets High Scent.</h1>
+				<p>At Glimmer Fragrance Co., we focus strictly on exceptional notes. Every formula is stripped to its pure, transcendent essence—designed to settle softly on the skin and radiate effortless elegance.</p>
+				<a class="button button-outline" href="/index/sections/Process">Discover Our Craft</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.section { padding: 100px 0; }
+	.about-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; align-items: center; gap: 85px; }
+	.about-photo img { width: 100%; height: 480px; border: 1px solid var(--border); border-radius: 24px; object-fit: cover; }
+	.section-label { color: var(--accent); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.17em; text-transform: uppercase; }
+	h1 { margin: 18px 0; font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1.1; }
+	p { margin-bottom: 30px; color: var(--muted); line-height: 1.9; }
+	@media (max-width: 990px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+</style>
